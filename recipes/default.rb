@@ -16,6 +16,6 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
-include_recipe "tmate-slave::inital_pkgs"
-include_recipe "tmate-slave::libevent_build"
-include_recipe "tmate-slave::tmate-slave_build"
+include_recipe "chef-tmate-slave::inital_pkgs"
+include_recipe "chef-tmate-slave::libevent_build"
+include_recipe "chef-tmate-slave::tmate-slave_build"

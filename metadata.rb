@@ -1,4 +1,4 @@
-name             'tmate-slave'
+name             'chef-tmate-slave'
 maintainer       'PeopleAdmin, Inc.'
 maintainer_email 'jj.asghar@peopleadmin.com'
 license          'Apache 2.0'
