@@ -18,8 +18,9 @@ Developed and Tested on Ubuntu 10.04
 
 Usage
 -----
-#### chef-tmate-slave::default
-TODO: Write usage instructions for each cookbook.
+#### tmate-slave::default
+
+1\. Be sure to change the domain in the [defaults.rb](attributes/default.rb) file.
 
 e.g.
 Just include `chef-tmate-slave` in your node's `run_list`:
