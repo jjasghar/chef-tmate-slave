@@ -1,2 +1,2 @@
 
-default["tmate-slave"]["domain"]          = "beersysadm.in"
+default['chef_tmate_slave']['domain']          = 'beersysadm.in'

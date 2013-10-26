@@ -24,6 +24,7 @@ script "compile_libevent-2.0.21" do
     interpreter "bash"
     user "root"
     cwd "/tmp"
+    creates "/usr/local/lib/libevent-2.0.so.5.1.9"
     code <<-EOH
       STATUS=0
       tar xvzf libevent-2.0.21-stable.tar.gz || STATUS=1
