@@ -17,10 +17,12 @@ when "redhat", "centos", "fedora"
       package pkg do
         action :install
       end
+      end
     when "6.4"
       %w{perl-ExtUtils-CBuilder perl-ExtUtils-MakeMaker cmake gcc gcc-c++ kernel-devel make curl-devel expat-devel gettext-devel openssl-devel zlib-devel ncurses ncurses-devel}.each do |pkg|
       package pkg do
         action :install
+      end
       end
     end
 
@@ -90,4 +92,3 @@ end
 #            exit $STATUS
 #          EOH
 #    end
-end
