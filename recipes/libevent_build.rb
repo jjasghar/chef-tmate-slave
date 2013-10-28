@@ -13,7 +13,7 @@ when "redhat", "centos", "fedora"
   execute "echo 'stupid redhat'"
 end
 
-remote_file "/tmp/libevent-2.0.21-stable.tar.gz" do
+remote_file "#{Chef::Config[:file_cache_path]}/libevent-2.0.21-stable.tar.gz" do
   source "https://github.com/downloads/libevent/libevent/libevent-2.0.21-stable.tar.gz"
   action :create_if_missing
   owner 'root'

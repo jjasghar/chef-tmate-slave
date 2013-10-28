@@ -26,7 +26,7 @@ when "redhat", "centos", "fedora"
       end
     end
 
-    remote_file "/tmp/v1.8.4.1.tar.gz" do
+    remote_file "#{Chef::Config[:file_cache_path]}/v1.8.4.1.tar.gz" do
       source "https://github.com/git/git/archive/v1.8.4.1.tar.gz"
       action :create_if_missing
       owner 'root'
