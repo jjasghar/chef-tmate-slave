@@ -9,7 +9,7 @@ case node["platform"]
    end
 end
 
-when "redhat", "centos", "fedora"
+when "redhat", "centos", "fedora","amazon","scientific"
   execute "echo 'stupid redhat'"
 end
 

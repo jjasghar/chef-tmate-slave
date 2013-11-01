@@ -10,7 +10,7 @@ when "debian", "ubuntu"
     end
     end
 
-when "redhat", "centos", "fedora"
+when "redhat", "centos", "fedora","amazon","scientific"
     case node["platform_version"]
     when "5.9"
       %w{cmake gcc gcc-c++ kernel-devel make curl-devel expat-devel gettext-devel openssl-devel zlib-devel ncurses ncurses-devel}.each do |pkg|
