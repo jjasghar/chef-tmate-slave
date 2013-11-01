@@ -1,23 +1,19 @@
-chef-tmate-slave Cookbook
-=========================
+# chef-tmate-slave Cookbook
+Build: [![Build Status](https://travis-ci.org/jjasghar/chef-tmate-slave.png)](https://travis-ci.org/jjasghar/chef-tmate-slave)
 
-http://tmate.io
+
+Based off of: http://tmate.io
 
 This is to be able to spin up and build a tmate-slave vm easily. The theory being run chef-solo with this and boom, you have a tmate-slave running so you can pair program.
 
-WIP TODO
---------
-1. complete chef-solo run
-2. move away from 10.04 ubuntu
+
+## Suggested Requirements
+
+I suggest something like [Digital Ocean](http://digitalocean.com/) and [knife-solo](http://matschaffer.github.io/knife-solo/) to provision the box. 
 
 
-Requirements
-------------
-Developed and Tested on Ubuntu 10.04
+## Usage
 
-
-Usage
------
 #### tmate-slave::default
 
 1\. Be sure to change the domain in the [defaults.rb](attributes/default.rb) file.
@@ -34,9 +30,7 @@ Just include `chef-tmate-slave` in your node's `run_list`:
 }
 ```
 
-Contributing
-------------
-TODO: (optional) If this is a public cookbook, detail the process for contributing. If this is a private cookbook, remove this section.
+## Contributing
 
 e.g.
 1. Fork the repository on Github
@@ -46,6 +40,5 @@ e.g.
 5. Run the tests, ensuring they all pass
 6. Submit a Pull Request using Github
 
-License and Authors
--------------------
-Authors: JJ Asghar
+## License and Authors
+Authors: Jonathan "JJ" Asghar
