@@ -1,5 +1,5 @@
 # chef-tmate-slave Cookbook
-Build: [![Build Status](https://travis-ci.org/jjasghar/chef-tmate-slave.png)](https://travis-ci.org/jjasghar/chef-tmate-slave)
+[![Build Status](https://travis-ci.org/jjasghar/chef-tmate-slave.png)](https://travis-ci.org/jjasghar/chef-tmate-slave)
 
 
 Based off of: http://tmate.io

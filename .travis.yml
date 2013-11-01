@@ -1,6 +1,6 @@
 language: ruby
 bundler_args: --without development
-script: 
+script:
   - bundle exec rake foodcritic
   - bundle exec rake knife
 gemfile:
@@ -8,8 +8,7 @@ gemfile:
 rvm:
   - 2.0
 env:
-  - CHEF_VERSION=11.4
-  - CHEF_VERSION=11.6
+  - CHEF_VERSION=11.8
 notifications:
   email:
       - jj.asghar@peopleadmin.com
