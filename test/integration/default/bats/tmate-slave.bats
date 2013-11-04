@@ -5,7 +5,7 @@
   [ "$status" -eq  0 ]
 }
 
-@test "confirm keys are in //tmp/tmate-slave/keys/ssh_host_dsa_key" {
+@test "confirm keys are in /tmp/tmate-slave/keys/ssh_host_dsa_key" {
   run ls /tmp/tmate-slave/keys/ssh_host_dsa_key
   [ "$status" -eq  0 ]
 }
