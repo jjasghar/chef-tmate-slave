@@ -36,7 +36,7 @@ when "redhat", "centos", "fedora","amazon","scientific"
     script "build_git" do
       interpreter "bash"
       user "root"
-      cwd "#{Chef::Config[:file_cache_path]}"
+      cwd Chef::Config[:file_cache_path]
       code <<-EOH
         STATUS=0
         tar xvzf v1.8.4.1.tar.gz || STATUS=1
