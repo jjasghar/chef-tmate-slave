@@ -6,8 +6,10 @@ script:
 gemfile:
    - Gemfile
 rvm:
-  - 2.0
+  - 1.9.3
+  - 2.0.0
 env:
+  - CHEF_VERSION=11.6
   - CHEF_VERSION=11.8
 notifications:
   email:
