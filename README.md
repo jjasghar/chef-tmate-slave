@@ -16,8 +16,6 @@ I suggest something like [Digital Ocean](http://digitalocean.com/) and [knife-so
 
 #### tmate-slave::default
 
-1\. Be sure to change the domain in the [defaults.rb](attributes/default.rb) file.
-
 e.g.
 Just include `chef-tmate-slave` in your node's `run_list`:
 
