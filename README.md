@@ -17,7 +17,7 @@ I suggest something like [Digital Ocean](http://digitalocean.com/) and [knife-so
 #### tmate-slave::default
 
 e.g.
-Just include `chef-tmate-slave` in your node's `run_list`:
+Just include `tmate-slave` in your node's `run_list`:
 
 ```json
 {
