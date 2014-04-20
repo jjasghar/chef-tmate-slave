@@ -30,6 +30,32 @@ task :prepare_sandbox do
  cp_r Dir.glob("{#{files.join(',')}}"), sandbox_path
 end
 
+desc "Cleanup Vendor directory"
+task :cleanup_vendor do
+  sh 'rm -rf vendor/cookbooks/*'
+end
+
+desc "Build AMI"
+task :packer_ami => [:cleanup_vendor, :packer_build_ami]
+
+task :packer_build_ami do
+  sh 'berks install --path vendor/cookbooks; packer build -only=amazon-ebs template.json'
+end
+
+desc "Build Droplet"
+task :packer_droplet => [:cleanup_vendor, :packer_build_droplet]
+
+task :packer_build_droplet do
+  sh 'berks install --path vendor/cookbooks; packer build -only=digitalocean template.json'
+end
+
+desc "Build Openstack"
+task :packer_openstack => [:cleanup_vendor, :packer_build_openstack]
+
+task :packer_build_openstack do
+  sh 'berks install --path vendor/cookbooks; packer build -only=openstack template.json'
+end
+
 private
 
 def prepare_foodcritic_sandbox(sandbox)
