@@ -1,0 +1,18 @@
+description     "tmate slave"
+
+start on runlevel [2345]
+stop on runlevel [!2345]
+
+respawn
+
+script
+  OPTIONS=""
+  if [ -e /etc/default/tmate-slave ]
+  then
+    . /etc/default/tmate-slave
+    echo "Sourcing config file."
+  else
+    echo "Config file not available."
+  fi
+  exec /usr/bin/tmate-slave -k /root/keys/ -p 23 $OPTIONS
+end script

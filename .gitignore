@@ -1,2 +1,6 @@
 .kitchen/
 .kitchen.local.yml
+vendor/cookbooks/
+packer_cache/*
+Gemfile.lock
+Berksfile.lock
